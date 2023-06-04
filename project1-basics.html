@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ukrainian borsch</title>
+  <style>
+    body {
+      background-color: #f9f7fe;
+      width: 100%;
+      margin: 60px auto;
+      font-family: 'Gloria Hallelujah', cursive;
+      border-radius: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid #fff;
+      padding: 20px;
+      border-radius: 20px;
+      color: rgb(99, 99, 250);
+      background-color: rgb(249, 249, 139);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      color: rgb(255, 94, 0);
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+      margin: 20px 0 10px;
+      color: gray;
+      text-align: justify;
+    }
+
+    img {
+      margin: 0 auto;
+      display: block;
+      border-radius: 20px;
+      max-width: 100%;
+    }
+
+    button {
+      display: block;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      font-size: 21px;
+      border-radius: 20px;
+      background: rgb(99, 99, 250);
+      color: rgb(249, 249, 139);
+      padding: 15px 20px;
+      transition: all 200ms ease-in-out;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      width: 400px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      background: rgb(249, 249, 139);
+      color: rgb(99, 99, 250);
+      border: none;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 40px;
+      width: 1200px;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+      background: white;
+      border-radius: 20px;
+    }
+
+    .small {
+      color: rgb(99, 99, 250);
+      text-decoration: none;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 5px auto;
+      font-size: 12px;
+      color: rgb(99, 99, 250);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>I <em>LOVE</em> BORSCH</h1>
+    <h2>Especially Ukrainian borsch</h2>
+    <hr />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/273/original/borshh.jpg?1685798028"
+      alt="Ukrainian borsch" width="600" height="400" ; />
+    <hr />
+    <p>
+      <strong>Borsch</strong> is a
+      traditional Ukrainian dish that is hearty, satisfying and full of
+      vitamins. The sweet and tart taste of <em>borsch</em> pleasantly tickles your
+      taste buds and makes you crave for more.
+    </p>
+    <p>
+      At the same time,<strong> borsch is more than food.</strong> <br />
+      On February 24, when russia started bombing all of Ukraine, many Ukrainians, in order not to panic, went to the
+      kitchen to cook borsch for their families👨‍👩‍👧‍👧. Borsch
+      became one of the main dishes
+      prepared by volunteers for those whose homes were bombed by the enemy. Borsch went to the front and to the
+      hospital.<br />
+      From the first days of the war, Ukrainians prepared borsch because they
+      wanted to display
+      <strong>the symbols, signs and taste of Ukraine.</strong>
+    </p>
+    <small><a href="https://ich.unesco.org/en/d%C3%A9cisions/5.EXT.COM/5?dec=decisions&ref_decision=5.EXT.COM"
+        target="decision" class="small">
+        Learn 📜
+      </a></small>
+    <small><a href="https://rubryka.com/en/article/ukrainian-borsch/" target="cook" class="small">
+        Cook 👨🏻‍🍳
+      </a></small>
+    <button class="button">👉 TRY UKRAINIAN BORSCH</button>
+    <p class="footer">This page was built by 🤱<em>Olga SAVELIEVA</em></p>
+  </div>
+
+  <script>
+    function changeName() {
+      let name = prompt("What is your name?");
+      if (name.length) {
+        alert(
+          "Thanks, " +
+          name +
+          " , we will be in touch. I hope you enjoy Borsch!"
+        );
+      } else {
+        alert(
+          "No name, no Borsch for you!🤗I'm joking, of course, come in, we treat everyone!"
+        );
+      }
+    }
+    let changeButton = document.querySelector("button");
+    changeButton.addEventListener("click", changeName);
+  </script>
+</body>
+
+</html>
